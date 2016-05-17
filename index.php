@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	
+
 <title>
 	Evil Bank | Primary Applicant Information</title>
 <link href="files/main.css" type="text/css" rel="stylesheet">
@@ -42,7 +42,7 @@ if (isset($_GET['enc'])) {
 		<table class="wao" width="100%" border="0" cellpadding="0" cellspacing="0">
 			<tbody><tr>
 				<td>
-					
+
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tbody><tr class="branding">
 		<td class="logo">
@@ -68,9 +68,9 @@ if (isset($_GET['enc'])) {
 					<table width="760" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
 						<tbody><tr>
 							<td valign="top" width="570">
-								
-								
-								
+
+
+
 			<h1>Primary Applicant</h1>
 	<table id="objForm_tblInfo" border="0" cellpadding="3" cellspacing="0">
 	<tbody><tr>
@@ -406,7 +406,7 @@ if (isset($_GET['enc'])) {
 			</td>
 	</tr>
 	<tr id="objForm_trCoApplicant">
-		<td id="objForm_tdCoApplicant">			    
+		<td id="objForm_tdCoApplicant">
 				Will you be applying with a co-applicant?
 			</td>
 		<td>
@@ -446,7 +446,7 @@ if (isset($_GET['enc'])) {
 		</tr>
 	</tbody></table>
 
- 
+
 
 							</td>
 							<td width="5">
@@ -454,17 +454,17 @@ if (isset($_GET['enc'])) {
 							</td>
 							<td class="right" valign="top" width="185">
 								<div class="box">
-									
+
 	<div class="head"><div>Are you a person?</div></div>
 	<ul>
 
 		<li><img src="captcha.php?enc=<?php echo $enc; ?>"></li>
-        <li><input type="text" name="captcha" value="" class="captcha" size="28"/></li>
+        <li><input type="text" name="captcha" value="" class="captcha" size="15"/></li>
         <li><input type="hidden" name="enc" value="<?php echo $enc; ?>" /></li>
 	</ul>
 
 
-									
+
 
 
 <div class="head"><div>Do you need assistance?</div></div>
