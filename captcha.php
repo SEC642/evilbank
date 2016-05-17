@@ -68,9 +68,9 @@ function produceimage($text) {
 $key = md5("lenovo");
 
 if (isset($_GET['enc']) and !isset($_GET['captcha'])) {
-	// Decrypt enc, get the string and produce the image 
-    $iv = hex2bin(substr($_GET['enc'], 0, 16));
-    $enc = hex2bin(substr($_GET['enc'], 16));
+	// Decrypt enc, get the string and produce the image
+    $iv = hex22bin(substr($_GET['enc'], 0, 16));
+    $enc = hex22bin(substr($_GET['enc'], 16));
 
 	list ($status, $plaintext) = decrypt($enc, $key, $iv);
     if ($status == 0) {
@@ -80,8 +80,8 @@ if (isset($_GET['enc']) and !isset($_GET['captcha'])) {
 	}
 } else if (isset($_GET['enc']) and isset($_GET['captcha'])) {
     // Decrypt and validate string
-    $iv = hex2bin(substr($_GET['enc'], 0, 16));
-    $enc = hex2bin(substr($_GET['enc'], 16));
+    $iv = hex22bin(substr($_GET['enc'], 0, 16));
+    $enc = hex22bin(substr($_GET['enc'], 16));
 
 	list ($status, $plaintext) = decrypt($enc, $key, $iv);
     if ($status != 0) {
